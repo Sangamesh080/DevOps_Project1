@@ -183,7 +183,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/ashokitschool/maven-web-app.git'
+                git 'https://github.com/Sangamesh080/maven-web-app.git'
             }
         }
         stage('Maven Build') {
@@ -193,7 +193,7 @@ pipeline {
         }
         stage('Docker Image') {
             steps {
-                sh 'docker build -t ashokit/mavenwebapp .'
+                sh 'docker build -t sangameshit/mavenwebapp .'
             }
         }
         stage('k8s deployment') {
